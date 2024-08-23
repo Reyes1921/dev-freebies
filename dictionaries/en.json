@@ -1,5 +1,14 @@
 {
   "Title": {
     "title": "Hello World!"
+  },
+  "Components": {
+    "title": "Components"
+  },
+  "Fonts": {
+    "title": "Fonts"
+  },
+  "Icons": {
+    "title": "Icons"
   }
 }

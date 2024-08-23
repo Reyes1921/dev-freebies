@@ -1,5 +1,14 @@
 {
   "Title": {
     "title": "Hola Mundo!"
+  },
+  "Components": {
+    "title": "Componentes"
+  },
+  "Fonts": {
+    "title": "Fuentes"
+  },
+  "Icons": {
+    "title": "Iconos"
   }
 }

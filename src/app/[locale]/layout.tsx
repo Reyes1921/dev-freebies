@@ -24,7 +24,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-black`}>
         <NextIntlClientProvider messages={dictionaries}>
           {children}
         </NextIntlClientProvider>
