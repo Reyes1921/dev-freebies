@@ -5,7 +5,14 @@ export default createMiddleware({
   locales: ["es", "en"],
 
   // Used when no locale matches
-  defaultLocale: "es",
+  defaultLocale: "en",
+
+  pathnames: {
+    "/about": {
+      en: "/about",
+      es: "/acerca",
+    },
+  },
 })
 
 export const config = {

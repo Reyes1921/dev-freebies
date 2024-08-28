@@ -3,6 +3,14 @@
     "title": "Web Dev Freebies - Contenido gratuito",
     "description": "Recursos gratuitos"
   },
+  "Header": {
+    "light": "Luz",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "languageTitle": "Seleccionar idioma",
+    "english": "Inglés",
+    "spanish": "Español"
+  },
   "Title": {
     "title": "Hola Mundo!"
   },

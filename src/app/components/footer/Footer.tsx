@@ -13,7 +13,7 @@ export const Footer = () => {
     },
   ]
   return (
-    <footer className="w-full mx-auto">
+    <footer className="w-full">
       <div className="container flex justify-center md:justify-end items-center p-3">
         <div className="flex">
           {icons.map((icon) => (
@@ -25,15 +25,15 @@ export const Footer = () => {
             >
               <Image
                 src={icon.src}
-                height="16"
-                width="24"
+                height="15"
+                width="20"
                 className="filter dark:invert"
                 alt={icon.alt}
               />
             </Link>
           ))}
         </div>
-        <p className="text-sm p-2 text-black dark:text-white"> Reyes Rondón</p>
+        <p className="text-sm text-black dark:text-white">Reyes Rondón</p>
       </div>
     </footer>
   )
