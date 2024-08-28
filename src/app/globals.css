@@ -29,6 +29,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --barScroll: #000;
   }
 
   .dark {
@@ -56,6 +57,7 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --barScroll: #fff;
   }
 }
 
@@ -75,10 +77,6 @@ html {
   /* scrollbar-color: #eeff37 #051623; */
 }
 
-* {
-  font-family: "__Lexend_866216", sans-serif;
-}
-
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 16px;
@@ -86,11 +84,11 @@ html {
 }
 
 *::-webkit-scrollbar-track {
-  background: #051623;
+  background: invert(var(--barScroll));
   /* border-radius: 10px; */
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #fafaf9;
+  background: var(--barScroll);
   border-radius: 10px;
 }

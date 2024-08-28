@@ -2,7 +2,7 @@ import {NextIntlClientProvider} from "next-intl"
 import {Overpass as FontSans} from "next/font/google"
 import {getMessages, getTranslations} from "next-intl/server"
 import {ThemeProvider} from "@/components/ui/theme-provider"
-import {Header} from "../components"
+import {Footer, Header} from "../components"
 import {cn} from "@/lib/utils"
 import "../globals.css"
 
@@ -53,6 +53,7 @@ export default async function RootLayout({
           >
             <Header />
             {children}
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
