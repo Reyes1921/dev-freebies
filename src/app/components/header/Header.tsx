@@ -6,7 +6,7 @@ import {MobileMenu} from "../menu/MobileMenu"
 
 export const Header = () => {
   return (
-    <header className="flex justify-between fixed z-30 w-full items-center py-3 px-5 border-b-2">
+    <header className="flex justify-between fixed z-30 w-full items-center py-3 px-3 border-b-2 bg-white dark:bg-black">
       <MobileMenu />
       <div className="flex justify-center items-center">
         <Link href={"/"} className="flex justify-center items-center">

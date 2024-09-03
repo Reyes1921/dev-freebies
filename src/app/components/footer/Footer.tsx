@@ -4,7 +4,7 @@ import Link from "next/link"
 export const Footer = () => {
   const icons = [
     {
-      path: "https://github.com/Reyes1921",
+      path: "https://github.com/Reyes1921/web-dev-freebies",
       src: "/github.svg",
       title: "Github",
       alt: '"github logo',

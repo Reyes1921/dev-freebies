@@ -41,7 +41,7 @@ export default async function RootLayout({
           <Header />
           <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white dark:bg-black">
             <Menu />
-            <div>{children}</div>
+            <div className="relative">{children}</div>
           </main>
           <Footer />
         </ThemeProvider>
