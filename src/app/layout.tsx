@@ -2,7 +2,7 @@ import {Overpass as FontSans} from "next/font/google"
 import {ThemeProvider} from "@/components/ui/theme-provider"
 import {cn} from "@/lib/utils"
 import "./globals.css"
-import {Footer, Header} from "./components"
+import {Footer, Header, Menu} from "./components"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -39,7 +39,10 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          {children}
+          <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white dark:bg-black">
+            <Menu />
+            <div>{children}</div>
+          </main>
           <Footer />
         </ThemeProvider>
       </body>
