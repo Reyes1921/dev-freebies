@@ -1,20 +1,18 @@
 import Image from "next/image"
-import {useTranslations} from "next-intl"
 import Link from "next/link"
 
 export const Footer = () => {
-  const dict = useTranslations("Links")
   const icons = [
     {
-      path: dict("github"),
+      path: "https://github.com/Reyes1921",
       src: "/github.svg",
       title: "Github",
       alt: '"github logo',
     },
   ]
   return (
-    <footer className="w-full p-3">
-      <div className="container flex justify-center md:justify-end items-center">
+    <footer className="w-full p-2">
+      <div className="container flex justify-center md:justify-end items-center p-0">
         <div>
           {icons.map((icon) => (
             <Link

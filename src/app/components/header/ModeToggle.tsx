@@ -2,7 +2,6 @@
 
 import {MoonIcon, SunIcon} from "@radix-ui/react-icons"
 import {useTheme} from "next-themes"
-import {useTranslations} from "next-intl"
 import {Button} from "@/components/ui/button"
 
 import {
@@ -14,7 +13,6 @@ import {
 
 export function ModeToggle() {
   const {setTheme} = useTheme()
-  const dict = useTranslations("Header")
 
   return (
     <DropdownMenu>
@@ -27,13 +25,13 @@ export function ModeToggle() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("light")}>
-          {dict("light")}
+          Light
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
-          {dict("dark")}
+          Dark
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
-          {dict("system")}
+          System
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
