@@ -2,6 +2,7 @@
 import {HiLanguage} from "react-icons/hi2"
 import {useTranslations} from "next-intl"
 import {Button} from "@/components/ui/button"
+import Link from "next/link"
 
 import {
   DropdownMenu,
@@ -13,7 +14,6 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
 } from "@radix-ui/react-dropdown-menu"
-import Link from "next/link"
 
 export const Language = () => {
   const dict = useTranslations("Header")

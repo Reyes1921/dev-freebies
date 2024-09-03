@@ -13,9 +13,9 @@ export const Footer = () => {
     },
   ]
   return (
-    <footer className="w-full">
-      <div className="container flex justify-center md:justify-end items-center p-3">
-        <div className="flex">
+    <footer className="w-full p-3">
+      <div className="container flex justify-center md:justify-end items-center">
+        <div>
           {icons.map((icon) => (
             <Link
               href={icon.path}

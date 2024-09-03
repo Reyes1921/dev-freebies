@@ -5,7 +5,7 @@ import {Language} from "./Language"
 
 export const Header = () => {
   return (
-    <div className="flex justify-between items-center p-5 border-b-2">
+    <div className="flex justify-between items-center py-3 px-5 border-b-2">
       <div className="flex justify-center items-center">
         <Link href={"/"}>
           <Image
@@ -13,10 +13,10 @@ export const Header = () => {
             width={50}
             height={50}
             alt="Image of logo"
-            className="w-[25px] md:w-[50px] dark:invert"
+            className="w-[25px] md:w-[35px] dark:invert"
           />
         </Link>
-        <h2 className="text-xl md:text-4xl px-5">Free Dev Freebies</h2>
+        <h2 className="text-xl md:text-2xl px-5">Free Dev Freebies</h2>
       </div>
       <div className="flex justify-around items-center">
         <div className="px-1">

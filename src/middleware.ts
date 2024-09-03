@@ -6,13 +6,6 @@ export default createMiddleware({
 
   // Used when no locale matches
   defaultLocale: "en",
-
-  pathnames: {
-    "/about": {
-      en: "/about",
-      es: "/acerca",
-    },
-  },
 })
 
 export const config = {
