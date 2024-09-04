@@ -1,0 +1,7 @@
+export {buttonData} from "./buttons/buttons"
+export {colorData} from "./colors/color"
+export {componentData} from "./components/components"
+export {fontData} from "./fonts/fonts"
+export {gradientData} from "./gradients/gradients"
+export {iconData} from "./icons/icons"
+export {imageData} from "./images/images"

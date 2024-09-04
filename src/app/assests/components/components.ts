@@ -1,4 +1,4 @@
-const componentData = [
+export const componentData = [
   {
     id: 1,
     name: "Aceternity UI",
@@ -21,5 +21,3 @@ const componentData = [
     color: "#06B6D4",
   },
 ]
-
-export default componentData

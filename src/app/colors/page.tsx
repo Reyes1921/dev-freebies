@@ -1,4 +1,4 @@
-import colorData from "../assests/colors/color"
+import {colorData} from "../assests"
 import {Items} from "../components/items/Items"
 
 export default function Colors() {

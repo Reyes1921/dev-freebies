@@ -1,4 +1,4 @@
-import componentData from "../assests/components/components"
+import {componentData} from "../assests"
 import {Items} from "../components/items/Items"
 
 export default function Component() {

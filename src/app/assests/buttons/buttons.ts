@@ -1,4 +1,4 @@
-const buttonData = [
+export const buttonData = [
   {
     id: 1,
     name: "UIverse",
@@ -21,5 +21,3 @@ const buttonData = [
     color: "#2CBC63",
   },
 ]
-
-export default buttonData

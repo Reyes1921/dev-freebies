@@ -1,4 +1,4 @@
-const iconData = [
+export const iconData = [
   {
     id: 1,
     name: "SVG Repo",
@@ -35,5 +35,3 @@ const iconData = [
     color: "#757575",
   },
 ]
-
-export default iconData

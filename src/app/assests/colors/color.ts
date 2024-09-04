@@ -1,4 +1,4 @@
-const colorData = [
+export const colorData = [
   {
     id: 1,
     name: "AI Colors",
@@ -57,5 +57,3 @@ const colorData = [
     color: "red",
   },
 ]
-
-export default colorData

@@ -1,4 +1,4 @@
-import buttonData from "../assests/buttons/buttons"
+import {buttonData} from "../assests"
 import {Items} from "../components/items/Items"
 
 export default function Buttons() {

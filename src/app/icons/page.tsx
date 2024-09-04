@@ -1,4 +1,4 @@
-import iconData from "../assests/icons/icons"
+import {iconData} from "../assests"
 import {Items} from "../components/items/Items"
 
 export default function Icons() {

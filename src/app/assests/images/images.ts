@@ -1,4 +1,4 @@
-const imageData = [
+export const imageData = [
   {
     id: 1,
     name: "Aceternity UI",
@@ -7,5 +7,3 @@ const imageData = [
     color: "#B253E8",
   },
 ]
-
-export default imageData

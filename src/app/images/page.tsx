@@ -1,4 +1,4 @@
-import imageData from "../assests/images/images"
+import {imageData} from "../assests"
 import {Items} from "../components/items/Items"
 
 export default function Images() {

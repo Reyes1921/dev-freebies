@@ -18,7 +18,7 @@ interface arrayContent {
 }
 export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4 grid-flow-row hover p-0">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 grid-flow-row hover p-0">
       {dataArray.map((item: arrayContent) => (
         <Card
           style={
@@ -26,12 +26,12 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
               "--color": item.color,
             } as React.CSSProperties
           }
-          className="min-w-[150px] shadow-drop-center hover:scale-105 transition-all shadow-drop-center duration-500 bg-accent dark:bg-accent"
+          className="shadow-drop-center hover:scale-105 transition-all shadow-drop-center duration-500 bg-accent dark:bg-primary-foreground"
           key={item.name}
         >
           <Link href={item.href} target="_blank">
-            <CardHeader>
-              <CardTitle className="text-sm md:text-base flex items-center">
+            <CardHeader className="p-4">
+              <CardTitle className="text-sm md:text-base flex items-center justify-normal py-0 ">
                 {item.name}
                 <FaExternalLinkAlt className="pl-1" />
               </CardTitle>
@@ -41,10 +41,10 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
                 src={item.img}
                 alt={`Image of ${item.name}`}
                 width={300}
-                height={200}
+                height={300}
                 blurDataURL="h.png"
                 placeholder="blur"
-                className="object-fill max-w-300 max-h-200"
+                className="object-contain w-full h-auto aspect-video"
               />
             </CardContent>
             <CardFooter></CardFooter>

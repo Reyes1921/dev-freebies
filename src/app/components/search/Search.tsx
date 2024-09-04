@@ -1,14 +1,12 @@
 "use client"
 
-import {
-  CalendarIcon,
-  EnvelopeClosedIcon,
-  FaceIcon,
-  GearIcon,
-  PersonIcon,
-  RocketIcon,
-} from "@radix-ui/react-icons"
-
+import {LuToyBrick} from "react-icons/lu"
+import {IoIosRadioButtonOn} from "react-icons/io"
+import {FaCheck} from "react-icons/fa6"
+import {AiOutlineFontSize} from "react-icons/ai"
+import {AiOutlineBgColors} from "react-icons/ai"
+import {PiImageSquareBold} from "react-icons/pi"
+import {MdGradient} from "react-icons/md"
 import {
   Command,
   CommandEmpty,
@@ -17,7 +15,6 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-  CommandShortcut,
 } from "@/components/ui/command"
 import {CiSearch} from "react-icons/ci"
 import {
@@ -28,6 +25,16 @@ import {
 } from "@/components/ui/dialog"
 import {Button} from "@/components/ui/button"
 import {useEffect, useState} from "react"
+import Link from "next/link"
+import {
+  buttonData,
+  colorData,
+  componentData,
+  fontData,
+  gradientData,
+  iconData,
+  imageData,
+} from "@/app/assests"
 
 export function Search() {
   const [open, setOpen] = useState(false)
@@ -59,38 +66,83 @@ export function Search() {
           <CommandInput placeholder="Type a command or search..." />
           <CommandList>
             <CommandEmpty>No results found.</CommandEmpty>
-            <CommandGroup heading="Suggestions">
-              <CommandItem>
-                <CalendarIcon className="mr-2 h-4 w-4" />
-                <span>Calendar</span>
-              </CommandItem>
-              <CommandItem>
-                <FaceIcon className="mr-2 h-4 w-4" />
-                <span>Search Emoji</span>
-              </CommandItem>
-              <CommandItem>
-                <RocketIcon className="mr-2 h-4 w-4" />
-                <span>Launch</span>
-              </CommandItem>
+            <CommandGroup heading="Components">
+              {componentData.map((item) => (
+                <Link key={item.name} href={item.href} className="">
+                  <CommandItem>
+                    <LuToyBrick className="mr-2 h-4 w-4" />
+                    <span>{item.name}</span>
+                  </CommandItem>
+                </Link>
+              ))}
             </CommandGroup>
             <CommandSeparator />
-            <CommandGroup heading="Settings">
-              <CommandItem>
-                <PersonIcon className="mr-2 h-4 w-4" />
-                <span>Profile</span>
-                <CommandShortcut>⌘P</CommandShortcut>
-              </CommandItem>
-              <CommandItem>
-                <EnvelopeClosedIcon className="mr-2 h-4 w-4" />
-                <span>Mail</span>
-                <CommandShortcut>⌘B</CommandShortcut>
-              </CommandItem>
-              <CommandItem>
-                <GearIcon className="mr-2 h-4 w-4" />
-                <span>Settings</span>
-                <CommandShortcut>⌘S</CommandShortcut>
-              </CommandItem>
+            <CommandGroup heading="Buttons">
+              {buttonData.map((item) => (
+                <Link key={item.name} href={item.href} className="">
+                  <CommandItem>
+                    <IoIosRadioButtonOn className="mr-2 h-4 w-4" />
+                    <span>{item.name}</span>
+                  </CommandItem>
+                </Link>
+              ))}
             </CommandGroup>
+            <CommandSeparator />
+            <CommandGroup heading="Icons">
+              {iconData.map((item) => (
+                <Link key={item.name} href={item.href} className="">
+                  <CommandItem>
+                    <FaCheck className="mr-2 h-4 w-4" />
+                    <span>{item.name}</span>
+                  </CommandItem>
+                </Link>
+              ))}
+            </CommandGroup>
+            <CommandSeparator />
+            <CommandGroup heading="Fonts">
+              {fontData.map((item) => (
+                <Link key={item.name} href={item.href} className="">
+                  <CommandItem>
+                    <AiOutlineFontSize className="mr-2 h-4 w-4" />
+                    <span>{item.name}</span>
+                  </CommandItem>
+                </Link>
+              ))}
+            </CommandGroup>
+            <CommandSeparator />
+            <CommandGroup heading="Colors">
+              {colorData.map((item) => (
+                <Link key={item.name} href={item.href} className="">
+                  <CommandItem>
+                    <AiOutlineBgColors className="mr-2 h-4 w-4" />
+                    <span>{item.name}</span>
+                  </CommandItem>
+                </Link>
+              ))}
+            </CommandGroup>
+            <CommandSeparator />
+            <CommandGroup heading="Images">
+              {imageData.map((item) => (
+                <Link key={item.name} href={item.href} className="">
+                  <CommandItem>
+                    <PiImageSquareBold className="mr-2 h-4 w-4" />
+                    <span>{item.name}</span>
+                  </CommandItem>
+                </Link>
+              ))}
+            </CommandGroup>
+            <CommandSeparator />
+            <CommandGroup heading="Gradients">
+              {gradientData.map((item) => (
+                <Link key={item.name} href={item.href} className="">
+                  <CommandItem>
+                    <MdGradient className="mr-2 h-4 w-4" />
+                    <span>{item.name}</span>
+                  </CommandItem>
+                </Link>
+              ))}
+            </CommandGroup>
+            <CommandSeparator />
           </CommandList>
         </Command>
       </DialogContent>

@@ -1,4 +1,4 @@
-const fontData = [
+export const fontData = [
   {
     id: 1,
     name: "Aceternity UI",
@@ -7,5 +7,3 @@ const fontData = [
     color: "#B253E8",
   },
 ]
-
-export default fontData

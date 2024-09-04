@@ -1,10 +1,12 @@
-import buttonData from "../assests/buttons/buttons"
-import colorData from "../assests/colors/color"
-import componentsData from "../assests/components/components"
-import fontData from "../assests/fonts/fonts"
-import gradientData from "../assests/gradients/gradients"
-import iconData from "../assests/icons/icons"
-import imageData from "../assests/images/images"
+import {
+  buttonData,
+  colorData,
+  componentData,
+  fontData,
+  gradientData,
+  iconData,
+  imageData,
+} from "../assests"
 
 export const links = () => {
   const menuLinks = [
@@ -12,7 +14,7 @@ export const links = () => {
       name: "components",
       href: "component",
       icon: "LuToyBrick",
-      number: componentsData.length,
+      number: componentData.length,
     },
     {
       name: "buttons",

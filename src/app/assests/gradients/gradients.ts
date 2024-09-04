@@ -1,4 +1,4 @@
-const gradientData = [
+export const gradientData = [
   {
     id: 1,
     name: "Hypercolor",
@@ -21,5 +21,3 @@ const gradientData = [
     color: "#8A0DD6",
   },
 ]
-
-export default gradientData
