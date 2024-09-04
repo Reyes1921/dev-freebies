@@ -26,7 +26,7 @@ export const MobileMenu = () => {
   const currentPath = usePathname()
   return (
     <Sheet>
-      <SheetTrigger asChild>
+      <SheetTrigger asChild className="z-999999">
         <button
           id="toggleSidebarMobile"
           aria-expanded="true"
@@ -61,13 +61,13 @@ export const MobileMenu = () => {
           </svg>
         </button>
       </SheetTrigger>
-      <SheetContent side={"left"}>
+      <SheetContent side="left">
         <SheetHeader>
           <SheetTitle></SheetTitle>
         </SheetHeader>
         <nav
           id="sidebar"
-          className="fixed flex md:hidden z-20 h-full top-0 left-0 pt-16 flex-shrink-0 flex-col w-80 transition-width duration-75"
+          className="fixed flex md:hidden z-99 h-full top-0 left-0 pt-16 flex-shrink-0 flex-col w-80 transition-width duration-75"
           aria-label="Sidebar"
         >
           <div className="relative flex-1 flex flex-col min-h-0 dark:border-border dark:bg-black dark:text-white">

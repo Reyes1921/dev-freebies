@@ -18,7 +18,7 @@ interface dataArray {
 }
 export const Items = ({colorData}: any) => {
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 grid-flow-row hover">
+    <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-3 grid-flow-row hover">
       {colorData.map((item: dataArray) => (
         <Card
           style={
@@ -31,7 +31,7 @@ export const Items = ({colorData}: any) => {
         >
           <Link href={item.href} target="_blank">
             <CardHeader>
-              <CardTitle className="text-base md:text-lg flex items-center">
+              <CardTitle className="text-sm md:text-base flex items-center">
                 {item.name}
                 <FaExternalLinkAlt className="pl-1" />
               </CardTitle>
@@ -39,13 +39,13 @@ export const Items = ({colorData}: any) => {
                 Deploy your new project in one-click.
               </CardDescription> */}
             </CardHeader>
-            <CardContent className="flex justify-center items-center">
+            <CardContent className="flex justify-center items-center p-0">
               <Image
                 src={item.img}
                 alt={`Image of ${item.name}`}
-                width={200}
-                height={200}
-                className="object-cover"
+                width={260}
+                height={190}
+                className="object-contain"
               />
             </CardContent>
             <CardFooter className="flex justify-between"></CardFooter>
