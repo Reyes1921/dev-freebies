@@ -53,10 +53,17 @@ export function Search() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" className="w-72 md:w-44 flex m-2 mb-6 z-99">
-          <span className="flex flex-1">Search</span>
-          <span>
+        <Button variant="outline" className="w-72 md:w-48 flex m-1 mb-6 z-99">
+          <span className="pr-2">
             <CiSearch />
+          </span>
+          <span className="flex flex-1">Search</span>
+          <span className="flex flex-2">
+            <p className="text-sm text-muted-foreground">
+              <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
+                <span className="text-xs">⌘</span>K
+              </kbd>
+            </p>
           </span>
         </Button>
       </DialogTrigger>

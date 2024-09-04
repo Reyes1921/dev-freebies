@@ -1,17 +1,17 @@
 "use client"
 
-import Link from "next/link"
-import {LuToyBrick} from "react-icons/lu"
-import {FaCheck} from "react-icons/fa6"
-import {AiOutlineFontSize} from "react-icons/ai"
 import {AiOutlineBgColors} from "react-icons/ai"
+import {AiOutlineFontSize} from "react-icons/ai"
+import {FaCheck} from "react-icons/fa6"
 import {IoIosRadioButtonOn} from "react-icons/io"
-import {PiImageSquareBold} from "react-icons/pi"
-import {MdGradient} from "react-icons/md"
 import {links} from "@/app/helpers"
-import {usePathname} from "next/navigation"
+import {LuToyBrick} from "react-icons/lu"
+import {MdGradient} from "react-icons/md"
+import {PiImageSquareBold} from "react-icons/pi"
 import {Search} from "../search/Search"
-
+import {usePathname} from "next/navigation"
+import Link from "next/link"
+import {Badge} from "@/components/ui/badge"
 const {menuLinks} = links()
 
 export const Menu = () => {
@@ -60,9 +60,7 @@ export const Menu = () => {
                         )) // Default icon if not found
                     }
                     <span className="ml-3 flex flex-1">{link.name}</span>
-                    <span className="flex flex-2 bg-accent-foreground rounded-md text-white dark:text-black px-1 text-sm font-bold">
-                      {link?.number}
-                    </span>
+                    <Badge variant="secondary">{link?.number}</Badge>
                   </Link>
                 </li>
               ))}

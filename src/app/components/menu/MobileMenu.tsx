@@ -21,7 +21,7 @@ import {
 import {usePathname} from "next/navigation"
 import {Search} from "../search/Search"
 import Image from "next/image"
-
+import {Badge} from "@/components/ui/badge"
 const {menuLinks} = links()
 
 export const MobileMenu = () => {
@@ -121,9 +121,7 @@ export const MobileMenu = () => {
                               )) // Default icon if not found
                           }
                           <span className="ml-3 flex flex-1">{link.name}</span>
-                          <span className="flex flex-2 bg-accent-foreground rounded-md text-white dark:text-black px-1 text-sm font-bold">
-                            {link?.number}
-                          </span>
+                          <Badge variant="secondary">{link?.number}</Badge>
                         </Link>
                       </SheetClose>
                     </li>
