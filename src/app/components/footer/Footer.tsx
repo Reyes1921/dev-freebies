@@ -11,7 +11,7 @@ export const Footer = () => {
     },
   ]
   return (
-    <footer className="w-full p-2">
+    <footer className="absolute bottom-0 w-full p-2 mt-8">
       <div className="container flex justify-center md:justify-end items-center p-0">
         <div>
           {icons.map((icon) => (

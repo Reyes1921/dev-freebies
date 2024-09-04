@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import {LuToyBrick} from "react-icons/lu"
 import {FaCheck} from "react-icons/fa6"
@@ -16,10 +18,12 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import {usePathname} from "next/navigation"
 
 const {menuLinks} = links()
 
 export const MobileMenu = () => {
+  const currentPath = usePathname()
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -63,7 +67,7 @@ export const MobileMenu = () => {
         </SheetHeader>
         <nav
           id="sidebar"
-          className="fixed flex md:hidden z-20 h-full top-0 left-0 pt-16 flex-shrink-0 flex-col w-64 transition-width duration-75"
+          className="fixed flex md:hidden z-20 h-full top-0 left-0 pt-16 flex-shrink-0 flex-col w-80 transition-width duration-75"
           aria-label="Sidebar"
         >
           <div className="relative flex-1 flex flex-col min-h-0 dark:border-border dark:bg-black dark:text-white">
@@ -75,7 +79,12 @@ export const MobileMenu = () => {
                       <SheetClose asChild>
                         <Link
                           href={link.href}
-                          className="text-base capitalize text-black font-normal rounded-lg flex items-center p-1 px-3 hover:bg-accent hover:dark:text-white group dark:text-zinc-500"
+                          className={`
+                      ${
+                        currentPath == `/${link.href}`
+                          ? " dark:text-white font-bold bg-accent"
+                          : " hover:dark:text-white group dark:text-white"
+                      } text-base capitalize text-black font-normal rounded-lg flex items-center p-1 px-3 hover:bg-accent hover:dark:text-white group`}
                         >
                           {
                             link.icon &&

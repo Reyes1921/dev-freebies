@@ -69,6 +69,18 @@
     @apply bg-background text-foreground;
   }
 }
+.shadow-drop-center:hover {
+  animation: shadow-drop-center 0.4s linear both;
+}
+
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: 0 0 15px 0 var(--color);
+  }
+}
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
@@ -79,7 +91,7 @@ html {
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 16px;
+  width: 14px;
   height: 12px;
 }
 

@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import {LuToyBrick} from "react-icons/lu"
 import {FaCheck} from "react-icons/fa6"
@@ -7,14 +9,17 @@ import {IoIosRadioButtonOn} from "react-icons/io"
 import {PiImageSquareBold} from "react-icons/pi"
 import {MdGradient} from "react-icons/md"
 import {links} from "@/app/helpers"
+import {usePathname} from "next/navigation"
 
 const {menuLinks} = links()
 
 export const Menu = () => {
+  const currentPath = usePathname()
+
   return (
     <aside
       id="sidebar"
-      className="fixed hidden z-20 h-full top-0 left-0 pt-16 md:flex flex-shrink-0 flex-col w-56 transition-width duration-75"
+      className="fixed hidden z-20 h-full top-0 left-0 pt-16 md:flex flex-shrink-0 flex-col w-52 transition-width duration-75"
       aria-label="Sidebar"
     >
       <div className="relative flex-1 flex flex-col min-h-0 border-r-2 border-border dark:border-border dark:bg-black dark:text-white">
@@ -25,7 +30,12 @@ export const Menu = () => {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-base capitalize text-black font-normal rounded-lg flex items-center p-1 px-3 hover:bg-accent hover:dark:text-white group dark:text-zinc-500"
+                    className={`
+                      ${
+                        currentPath == `/${link.href}`
+                          ? " dark:text-white font-bold bg-accent"
+                          : " hover:dark:text-white group dark:text-zinc-500"
+                      } text-base capitalize text-black font-normal rounded-lg flex items-center p-1 px-3 hover:bg-accent hover:dark:text-white group`}
                   >
                     {
                       link.icon &&
