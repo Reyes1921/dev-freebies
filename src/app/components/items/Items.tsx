@@ -19,7 +19,7 @@ export const Items = ({colorData}: any) => {
   return (
     <div className="flex flex-wrap ">
       {colorData.map((item: dataArray) => (
-        <Card className="w-[350px]">
+        <Card className="w-[350px]" key={item.name}>
           <CardHeader>
             <CardTitle>{item.name}</CardTitle>
             <CardDescription>
