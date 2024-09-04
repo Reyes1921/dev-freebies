@@ -18,7 +18,7 @@ interface dataArray {
 }
 export const Items = ({colorData}: any) => {
   return (
-    <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-3 grid-flow-row hover">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 grid-flow-row hover p-0">
       {colorData.map((item: dataArray) => (
         <Card
           style={

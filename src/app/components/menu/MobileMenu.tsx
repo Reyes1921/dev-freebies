@@ -28,7 +28,7 @@ export const MobileMenu = () => {
   const currentPath = usePathname()
   return (
     <Sheet>
-      <SheetTrigger asChild className="z-999999">
+      <SheetTrigger asChild className="z-100">
         <button
           id="toggleSidebarMobile"
           aria-expanded="true"
@@ -63,7 +63,7 @@ export const MobileMenu = () => {
           </svg>
         </button>
       </SheetTrigger>
-      <SheetContent side="left">
+      <SheetContent side="left" className="w-80">
         <SheetHeader>
           <SheetTitle>
             <div className="flex justify-center">

@@ -53,9 +53,9 @@ export function Search() {
           </span>
         </Button>
       </DialogTrigger>
-      <DialogContent className="p">
+      <DialogContent className="">
         <DialogTitle></DialogTitle>
-        <Command className="rounded-lg border shadow-md md:min-w-[450px] text-black dark:text-white">
+        <Command className="rounded-lg border shadow-md md:min-w-[470px] text-black dark:text-white">
           <CommandInput placeholder="Type a command or search..." />
           <CommandList>
             <CommandEmpty>No results found.</CommandEmpty>

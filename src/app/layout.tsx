@@ -39,9 +39,9 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="container flex min-h-screen flex-col items-center justify-between py-10  bg-white dark:bg-black">
+          <main className="container flex min-h-screen flex-col items-center justify-between py-10 bg-white dark:bg-black">
             <Menu />
-            <div className="md:left-56 pt-10 md:pt-0 p-5 md:pr-9 md:absolute top-16 md:top-24 right-0 left-0">
+            <div className="md:left-56 pt-10 md:pt-0 md:p-5 md:pb-10 md:pr-9 md:absolute top-16 md:top-24 right-0 left-0">
               {children}
             </div>
           </main>
