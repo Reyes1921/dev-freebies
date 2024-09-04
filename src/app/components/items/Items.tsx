@@ -8,18 +8,20 @@ import {
 } from "@/components/ui/card"
 import Image from "next/image"
 import Link from "next/link"
+import {useState} from "react"
 import {FaExternalLinkAlt} from "react-icons/fa"
 
-interface dataArray {
+interface arrayContent {
   name: string
   img: string
   href: string
+  tags?: string[]
   color: string
 }
-export const Items = ({colorData}: any) => {
+export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3 grid-flow-row hover p-0">
-      {colorData.map((item: dataArray) => (
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4 grid-flow-row hover p-0">
+      {dataArray.map((item: arrayContent) => (
         <Card
           style={
             {
@@ -43,12 +45,14 @@ export const Items = ({colorData}: any) => {
               <Image
                 src={item.img}
                 alt={`Image of ${item.name}`}
-                width={260}
-                height={190}
-                className="object-contain"
+                width={300}
+                height={200}
+                blurDataURL="h.png"
+                placeholder="blur"
+                className="object-fill max-w-300 max-h-200"
               />
             </CardContent>
-            <CardFooter className="flex justify-between"></CardFooter>
+            <CardFooter></CardFooter>
           </Link>
         </Card>
       ))}

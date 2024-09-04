@@ -59,7 +59,10 @@ export const Menu = () => {
                           <LuToyBrick />
                         )) // Default icon if not found
                     }
-                    <span className="ml-3">{link.name}</span>
+                    <span className="ml-3 flex flex-1">{link.name}</span>
+                    <span className="flex flex-2 bg-accent-foreground rounded-md text-white dark:text-black px-1 text-sm font-bold">
+                      {link?.number}
+                    </span>
                   </Link>
                 </li>
               ))}
