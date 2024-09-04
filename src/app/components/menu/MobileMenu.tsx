@@ -19,6 +19,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import {usePathname} from "next/navigation"
+import {Search} from "../search/Search"
+import Image from "next/image"
 
 const {menuLinks} = links()
 
@@ -63,7 +65,18 @@ export const MobileMenu = () => {
       </SheetTrigger>
       <SheetContent side="left">
         <SheetHeader>
-          <SheetTitle></SheetTitle>
+          <SheetTitle>
+            <div className="flex justify-center">
+              <Image
+                src="/logo.svg"
+                width={40}
+                height={40}
+                alt="Image of logo"
+                className="h-[24px] w-[22px] md:w-[29px] dark:invert"
+              />
+              <h2 className="text-xl md:text-2xl px-2">Dev Freebies</h2>
+            </div>
+          </SheetTitle>
         </SheetHeader>
         <nav
           id="sidebar"
@@ -74,6 +87,7 @@ export const MobileMenu = () => {
             <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
               <div className="flex-1 px-4 bg-white divide-y space-y-1 dark:bg-black dark:border-white dark:text-white">
                 <ul className="space-y-2 pb-2">
+                  <Search />
                   {menuLinks.map((link) => (
                     <li key={link.href}>
                       <SheetClose asChild>

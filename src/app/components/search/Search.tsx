@@ -25,7 +25,7 @@ export function Search() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" className="w-48 flex m-2">
+        <Button variant="outline" className="w-72 md:w-48 flex m-2 mb-6 z-99">
           <span className="flex flex-1">Search</span>
           <span>
             <CiSearch />
