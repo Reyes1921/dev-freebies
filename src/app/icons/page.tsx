@@ -1,3 +1,11 @@
+import iconData from "../assests/icons/icons"
+import {Items} from "../components/items/Items"
+
 export default function Icons() {
-  return <h1 className="text-white">Icons</h1>
+  return (
+    <div>
+      <h1 className="text-3xl pb-4">Icons</h1>
+      <Items dataArray={iconData} />
+    </div>
+  )
 }

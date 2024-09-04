@@ -1,3 +1,11 @@
+import fontData from "../assests/fonts/fonts"
+import {Items} from "../components/items/Items"
+
 export default function Fonts() {
-  return <h1 className="text-white">Fonts</h1>
+  return (
+    <div>
+      <h1 className="text-3xl pb-4">Fonts</h1>
+      <Items dataArray={fontData} />
+    </div>
+  )
 }

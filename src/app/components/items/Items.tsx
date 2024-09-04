@@ -1,21 +1,19 @@
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
 import Image from "next/image"
 import Link from "next/link"
-import {useState} from "react"
 import {FaExternalLinkAlt} from "react-icons/fa"
 
 interface arrayContent {
+  id: number
   name: string
   img: string
   href: string
-  tags?: string[]
   color: string
 }
 export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
@@ -28,7 +26,7 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
               "--color": item.color,
             } as React.CSSProperties
           }
-          className="min-w-[150px] shadow-drop-center hover:scale-105 transition-all shadow-drop-center duration-500"
+          className="min-w-[150px] shadow-drop-center hover:scale-105 transition-all shadow-drop-center duration-500 bg-accent dark:bg-accent"
           key={item.name}
         >
           <Link href={item.href} target="_blank">
@@ -37,9 +35,6 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
                 {item.name}
                 <FaExternalLinkAlt className="pl-1" />
               </CardTitle>
-              {/* <CardDescription>
-                Deploy your new project in one-click.
-              </CardDescription> */}
             </CardHeader>
             <CardContent className="flex justify-center items-center p-0">
               <Image

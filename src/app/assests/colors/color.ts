@@ -4,7 +4,6 @@ const colorData = [
     name: "AI Colors",
     img: "/colors/AI Colors.webp",
     href: "https://tintmint.net",
-    tags: ["AI", "Preview"],
     color: "#a855f7",
   },
   {
@@ -12,7 +11,6 @@ const colorData = [
     name: "Color selector",
     img: "/colors/AI Colors.webp",
     href: "https://www.color-selector.com",
-    tags: ["Catalogue"],
     color: "yellow",
   },
   {
@@ -28,7 +26,6 @@ const colorData = [
     name: "Coolors",
     img: "/colors/AI Colors.webp",
     href: "https://coolors.co",
-    tags: ["Image"],
     color: "green",
   },
   {
@@ -43,7 +40,6 @@ const colorData = [
     name: "Grabient",
     img: "/colors/AI Colors.webp",
     href: "https://www.grabient.com",
-    tags: ["Gradients"],
     color: "purple",
   },
   {
@@ -58,7 +54,6 @@ const colorData = [
     name: "Realtime Colors",
     img: "/colors/AI Colors.webp",
     href: "https://www.realtimecolors.com",
-    tags: ["Preview"],
     color: "red",
   },
 ]
