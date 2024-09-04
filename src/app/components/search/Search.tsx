@@ -1,3 +1,5 @@
+"use client"
+
 import {
   CalendarIcon,
   EnvelopeClosedIcon,
@@ -18,22 +20,42 @@ import {
   CommandShortcut,
 } from "@/components/ui/command"
 import {CiSearch} from "react-icons/ci"
-import {Dialog, DialogContent, DialogTrigger} from "@/components/ui/dialog"
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 import {Button} from "@/components/ui/button"
+import {useEffect, useState} from "react"
 
 export function Search() {
+  const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    const down = (e: KeyboardEvent) => {
+      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault()
+        setOpen((open) => !open)
+      }
+    }
+    document.addEventListener("keydown", down)
+    return () => document.removeEventListener("keydown", down)
+  }, [])
+
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" className="w-72 md:w-48 flex m-2 mb-6 z-99">
+        <Button variant="outline" className="w-72 md:w-44 flex m-2 mb-6 z-99">
           <span className="flex flex-1">Search</span>
           <span>
             <CiSearch />
           </span>
         </Button>
       </DialogTrigger>
-      <DialogContent className="">
-        <Command className="rounded-lg border shadow-md md:min-w-[450px]">
+      <DialogContent className="p">
+        <DialogTitle></DialogTitle>
+        <Command className="rounded-lg border shadow-md md:min-w-[450px] text-black dark:text-white">
           <CommandInput placeholder="Type a command or search..." />
           <CommandList>
             <CommandEmpty>No results found.</CommandEmpty>
