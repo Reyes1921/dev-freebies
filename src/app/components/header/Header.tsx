@@ -17,7 +17,7 @@ export const Header = () => {
             alt="Image of logo"
             className="w-[25px] md:w-[35px] dark:invert"
           />
-          <h2 className="text-xl md:text-2xl px-5">Free Dev Freebies</h2>
+          <h2 className="text-xl md:text-2xl px-5">Dev Freebies</h2>
         </Link>
       </div>
       <div className="flex justify-around items-center">

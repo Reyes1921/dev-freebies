@@ -3,6 +3,9 @@ import {LuToyBrick} from "react-icons/lu"
 import {FaCheck} from "react-icons/fa6"
 import {AiOutlineFontSize} from "react-icons/ai"
 import {AiOutlineBgColors} from "react-icons/ai"
+import {IoIosRadioButtonOn} from "react-icons/io"
+import {PiImageSquareBold} from "react-icons/pi"
+import {MdGradient} from "react-icons/md"
 import {links} from "@/app/helpers"
 import {
   Sheet,
@@ -84,10 +87,12 @@ export const MobileMenu = () => {
                                 <AiOutlineFontSize />
                               ) : link.icon === "AiOutlineBgColors" ? (
                                 <AiOutlineBgColors />
-                              ) : link.icon === "FaCheck" ? (
-                                <FaCheck />
-                              ) : link.icon === "FaCheck" ? (
-                                <FaCheck />
+                              ) : link.icon === "IoIosRadioButtonOn" ? (
+                                <IoIosRadioButtonOn />
+                              ) : link.icon === "PiImageSquareBold" ? (
+                                <PiImageSquareBold />
+                              ) : link.icon === "MdGradient" ? (
+                                <MdGradient />
                               ) : (
                                 <LuToyBrick />
                               )) // Default icon if not found

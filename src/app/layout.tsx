@@ -11,13 +11,13 @@ const fontSans = FontSans({
 
 export async function generateMetadata() {
   return {
-    title: "Web Dev Freebies - Free content",
+    title: "Dev Freebies - Free content",
     description: "Free resources for web development and more...",
     icons: {
       icon: "/favicon.ico",
     },
     alternates: {
-      canonical: "https://web-dev-freebies.vercel.app/",
+      canonical: "https://dev-freebies.vercel.app/",
     },
   }
 }
