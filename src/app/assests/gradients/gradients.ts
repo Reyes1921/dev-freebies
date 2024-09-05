@@ -20,4 +20,11 @@ export const gradientData = [
     href: "https://animated-gradient-background-generator.netlify.app/",
     color: "#8A0DD6",
   },
+  {
+    id: 4,
+    name: "Grabient",
+    img: "/gradients/Grabient.webp",
+    href: "https://www.grabient.com",
+    color: "#CE5DB8",
+  },
 ]

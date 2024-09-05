@@ -16,7 +16,7 @@ export const buttonData = [
   {
     id: 3,
     name: "CSS Scan",
-    img: "/buttons/cattocss.webp",
+    img: "/buttons/CSS Scan.webp",
     href: "https://getcssscan.com/css-buttons-examples",
     color: "#2CBC63",
   },
