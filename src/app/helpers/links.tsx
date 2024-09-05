@@ -13,13 +13,13 @@ import {
   videoData,
 } from "../assests"
 
-import {IoColorPalette} from "react-icons/io5"
 import {AiOutlineFontSize} from "react-icons/ai"
 import {BsBadge3dFill} from "react-icons/bs"
 import {FaCheck} from "react-icons/fa6"
 import {FaPaintBrush} from "react-icons/fa"
 import {FaTools} from "react-icons/fa"
 import {FaVideo} from "react-icons/fa"
+import {IoColorPalette} from "react-icons/io5"
 import {IoIosRadioButtonOn} from "react-icons/io"
 import {LuToyBrick} from "react-icons/lu"
 import {MdAnimation} from "react-icons/md"

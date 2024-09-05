@@ -17,7 +17,7 @@ export const animationData = [
     id: 3,
     name: "Animatiss",
     img: "/animations/animatiss.webp",
-    href: "https://animista.net/play/basic",
+    href: "https://xsgames.co/animatiss/",
     color: "#FFEB3A",
   },
   {
