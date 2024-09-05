@@ -26,7 +26,7 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
               "--color": item.color,
             } as React.CSSProperties
           }
-          className="shadow-drop-center hover:scale-105 transition-all shadow-drop-center duration-500 bg-accent dark:bg-primary-foreground"
+          className="shadow-drop-center hover:scale-105 transition-all shadow-drop-center duration-500  test"
           key={item.name}
         >
           <Link href={item.href} target="_blank">

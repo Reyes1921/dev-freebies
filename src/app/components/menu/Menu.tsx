@@ -1,13 +1,6 @@
 "use client"
 
-import {AiOutlineBgColors} from "react-icons/ai"
-import {AiOutlineFontSize} from "react-icons/ai"
-import {FaCheck} from "react-icons/fa6"
-import {IoIosRadioButtonOn} from "react-icons/io"
 import {links} from "@/app/helpers"
-import {LuToyBrick} from "react-icons/lu"
-import {MdGradient} from "react-icons/md"
-import {PiImageSquareBold} from "react-icons/pi"
 import {Search} from "../search/Search"
 import {usePathname} from "next/navigation"
 import Link from "next/link"
@@ -39,26 +32,7 @@ export const Menu = () => {
                           : " hover:dark:text-white group dark:text-zinc-500"
                       } text-base capitalize text-black font-normal rounded-lg flex items-center p-1 px-3 hover:bg-accent hover:dark:text-white group`}
                   >
-                    {
-                      link.icon &&
-                        (link.icon === "LuToyBrick" ? (
-                          <LuToyBrick />
-                        ) : link.icon === "FaCheck" ? (
-                          <FaCheck />
-                        ) : link.icon === "AiOutlineFontSize" ? (
-                          <AiOutlineFontSize />
-                        ) : link.icon === "AiOutlineBgColors" ? (
-                          <AiOutlineBgColors />
-                        ) : link.icon === "IoIosRadioButtonOn" ? (
-                          <IoIosRadioButtonOn />
-                        ) : link.icon === "PiImageSquareBold" ? (
-                          <PiImageSquareBold />
-                        ) : link.icon === "MdGradient" ? (
-                          <MdGradient />
-                        ) : (
-                          <LuToyBrick />
-                        )) // Default icon if not found
-                    }
+                    {link.icon}
                     <span className="ml-3 flex flex-1">{link.name}</span>
                     <Badge variant="secondary">{link?.number}</Badge>
                   </Link>

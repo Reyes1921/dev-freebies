@@ -82,6 +82,10 @@
   }
 }
 
+.test {
+  background: linear-gradient(180deg, #242424, #121212 25.62%);
+}
+
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;

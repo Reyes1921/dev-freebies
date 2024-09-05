@@ -1,4 +1,9 @@
-import {Menu} from "./components/menu/Menu"
+import {Bento} from "./components/bento/Bento"
 export default function Home() {
-  return <h1 className="text-black dark:text-white text-left">Dev Freebies</h1>
+  return (
+    <>
+      <h1 className="hidden">Dev Freebies</h1>
+      <Bento />
+    </>
+  )
 }
