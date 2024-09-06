@@ -33,7 +33,8 @@ export const links = () => {
       href: "3d",
       icon: <BsBadge3dFill />,
       number: tdData.length,
-      description: "Description Test",
+      description:
+        "Dive into the world of three-dimensional design and discover techniques, software, and inspiration for creating stunning visuals.",
       image: "/components/aceternity.webp",
     },
     {
@@ -41,7 +42,8 @@ export const links = () => {
       href: "animations",
       icon: <MdAnimation />,
       number: animationData.length,
-      description: "Description Test",
+      description:
+        "Discover the art of motion and explore resources for creating captivating animations for your projects.",
       image: "/components/aceternity.webp",
     },
     {
@@ -49,7 +51,8 @@ export const links = () => {
       href: "buttons",
       icon: <IoIosRadioButtonOn />,
       number: buttonData.length,
-      description: "Description Test",
+      description:
+        "Learn about the design and functionality of buttons and find inspiration for your projects.",
       image: "/components/aceternity.webp",
     },
     {
@@ -57,7 +60,8 @@ export const links = () => {
       href: "colors",
       icon: <IoColorPalette />,
       number: colorData.length,
-      description: "Description Test",
+      description:
+        "Dive into the psychology of color and how it can impact your designs. Discover color palettes, theory, and accessibility guidelines.",
       image: "/components/aceternity.webp",
     },
     {
@@ -65,7 +69,8 @@ export const links = () => {
       href: "component",
       icon: <LuToyBrick />,
       number: componentData.length,
-      description: "Description Test",
+      description:
+        "Explore essential UI components and learn how to use them effectively in your designs.",
       image: "/components/aceternity.webp",
     },
     {
@@ -73,7 +78,8 @@ export const links = () => {
       href: "fonts",
       icon: <AiOutlineFontSize />,
       number: fontData.length,
-      description: "Description Test",
+      description:
+        "Discover the world of typography and find resources for selecting, pairing, and using fonts in your projects.",
       image: "/components/aceternity.webp",
     },
     {
@@ -81,7 +87,8 @@ export const links = () => {
       href: "gradients",
       icon: <MdGradient />,
       number: gradientData.length,
-      description: "Description Test",
+      description:
+        "Learn about the art of gradients and how to use them to create visually appealing designs.",
       image: "/components/aceternity.webp",
     },
     {
@@ -89,7 +96,8 @@ export const links = () => {
       href: "icons",
       icon: <FaCheck />,
       number: iconData.length,
-      description: "Description Test",
+      description:
+        "Explore the world of icons and find resources for free and premium icon libraries.",
       image: "/components/aceternity.webp",
     },
     {
@@ -97,7 +105,8 @@ export const links = () => {
       href: "illustrations",
       icon: <FaPaintBrush />,
       number: illustrationsData.length,
-      description: "Description Test",
+      description:
+        "Discover the power of illustrations and find inspiration for your projects.",
       image: "/components/aceternity.webp",
     },
     {
@@ -105,7 +114,8 @@ export const links = () => {
       href: "images",
       icon: <PiImageSquareBold />,
       number: imageData.length,
-      description: "Description Test",
+      description:
+        "Learn about image optimization, formats, and best practices for web design.",
       image: "/components/aceternity.webp",
     },
     {
@@ -113,7 +123,8 @@ export const links = () => {
       href: "tools",
       icon: <FaTools />,
       number: toolData.length,
-      description: "Description Test",
+      description:
+        "Discover a variety of design tools to enhance your workflow and productivity.",
       image: "/components/aceternity.webp",
     },
     {
@@ -121,7 +132,8 @@ export const links = () => {
       href: "videos",
       icon: <FaVideo />,
       number: videoData.length,
-      description: "Description Test",
+      description:
+        "Explore the world of video content and learn about video production, editing, and marketing.",
       image: "/components/aceternity.webp",
     },
   ]
