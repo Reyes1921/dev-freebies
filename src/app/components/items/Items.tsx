@@ -1,3 +1,5 @@
+"use client"
+
 import {
   Card,
   CardContent,
@@ -7,6 +9,7 @@ import {
 } from "@/components/ui/card"
 import Image from "next/image"
 import Link from "next/link"
+import {useState} from "react"
 import {FaExternalLinkAlt} from "react-icons/fa"
 
 interface arrayContent {
@@ -17,6 +20,13 @@ interface arrayContent {
   color: string
 }
 export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
+  const [loading, setLoading] = useState(true)
+
+  const imageLoading = () => {
+    setLoading(false)
+    console.log(dataArray)
+  }
+
   return (
     <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 grid-flow-row hover p-0 animated fadeInUp">
       {dataArray.map((item: arrayContent) => (
@@ -38,16 +48,21 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
             </CardHeader>
             {/* <div className="loader flex justify-center items-center"></div> */}
             <CardContent className="flex justify-center items-center p-0">
-              <Image
-                src={item.img}
-                alt={`Image of ${item.name}`}
-                width={300}
-                height={300}
-                blurDataURL="/logo.svg"
-                placeholder="blur"
-                loading="lazy"
-                className="object-contain w-full h-auto aspect-video"
-              />
+              {loading ? (
+                <div className="loader flex justify-center items-center"></div>
+              ) : (
+                <Image
+                  src={item.img}
+                  alt={`Image of ${item.name}`}
+                  width={300}
+                  height={300}
+                  blurDataURL="/logo.svg"
+                  placeholder="empty"
+                  onLoad={imageLoading}
+                  loading="lazy"
+                  className="object-contain w-full h-auto aspect-video"
+                />
+              )}
             </CardContent>
             <CardFooter></CardFooter>
           </Link>
