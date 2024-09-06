@@ -36,14 +36,16 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
                 <FaExternalLinkAlt className="pl-1" />
               </CardTitle>
             </CardHeader>
+            {/* <div className="loader flex justify-center items-center"></div> */}
             <CardContent className="flex justify-center items-center p-0">
               <Image
                 src={item.img}
                 alt={`Image of ${item.name}`}
                 width={300}
                 height={300}
-                blurDataURL="h.png"
+                blurDataURL="/logo.svg"
                 placeholder="blur"
+                loading="lazy"
                 className="object-contain w-full h-auto aspect-video"
               />
             </CardContent>
