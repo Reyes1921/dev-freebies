@@ -69,6 +69,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.shadow-drop-center {
+  border-color: var(--color);
+}
+
 .shadow-drop-center:hover {
   animation: shadow-drop-center 0.4s linear both;
 }
