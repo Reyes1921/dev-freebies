@@ -48,7 +48,7 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
             </CardHeader>
             {/* <div className="loader flex justify-center items-center"></div> */}
             <CardContent className="flex justify-center items-center p-0">
-              {loading ? (
+              {false ? (
                 <div className="loader flex justify-center items-center"></div>
               ) : (
                 <Image
@@ -57,9 +57,13 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
                   width={300}
                   height={300}
                   blurDataURL="/logo.svg"
-                  placeholder="empty"
+                  placeholder="blur"
                   onLoad={imageLoading}
                   loading="lazy"
+                  onError={() => {
+                    console.error(`Failed to load image: ${item.img}`)
+                    setLoading(false) // Set loading to false even if the image fails to load
+                  }}
                   className="object-contain w-full h-auto aspect-video"
                 />
               )}
