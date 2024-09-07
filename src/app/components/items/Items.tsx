@@ -13,11 +13,11 @@ import {useState} from "react"
 import {FaExternalLinkAlt} from "react-icons/fa"
 
 interface arrayContent {
-  id: number
-  name: string
-  img: string
-  href: string
   color: string
+  href: string
+  id: number
+  img: string
+  name: string
 }
 export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
   const [loading, setLoading] = useState(true)
@@ -47,8 +47,8 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
               </CardTitle>
             </CardHeader>
             {/* <div className="loader flex justify-center items-center"></div> */}
-            <CardContent className="flex justify-center items-center p-0">
-              {false ? (
+            <CardContent className="flex justify-center items-center p-0 aspect-video">
+              {loading ? (
                 <div className="loader flex justify-center items-center"></div>
               ) : (
                 <Image
