@@ -37,6 +37,6 @@ Application opens on port 3000
 
 </div>
 
-# 🔑 License
+## 🔑 License
 
 This website is licensed under the [MIT License](https://github.com/Reyes1921/dev-freebies/blob/main/LICENSE)
