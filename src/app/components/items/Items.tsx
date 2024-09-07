@@ -48,7 +48,7 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
             </CardHeader>
             {/* <div className="loader flex justify-center items-center"></div> */}
             <CardContent className="flex justify-center items-center p-0 aspect-video">
-              {loading ? (
+              {false ? (
                 <div className="loader flex justify-center items-center"></div>
               ) : (
                 <Image
