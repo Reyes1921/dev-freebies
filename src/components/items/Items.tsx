@@ -64,7 +64,9 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
                     console.error(`Failed to load image: ${item.img}`)
                     setLoading(false) // Set loading to false even if the image fails to load
                   }}
-                  className="object-contain w-full h-auto aspect-video"
+                  className={`object-contain w-full h-auto aspect-video ${
+                    loading ? "blur" : "remove-blur"
+                  }`}
                 />
               )}
             </CardContent>
