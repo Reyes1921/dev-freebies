@@ -1,5 +1,5 @@
-import {fontData} from "../assests"
-import {Items} from "../components/items/Items"
+import {fontData} from "../../data"
+import {Items} from "../../components/items/Items"
 
 export default function Fonts() {
   return (

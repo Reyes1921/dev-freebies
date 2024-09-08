@@ -1,5 +1,5 @@
-import {animationData} from "../assests"
-import {Items} from "../components/items/Items"
+import {animationData} from "../../data"
+import {Items} from "../../components/items/Items"
 
 export default function Animations() {
   return (

@@ -1,5 +1,5 @@
-import {iconData} from "../assests"
-import {Items} from "../components/items/Items"
+import {iconData} from "../../data"
+import {Items} from "../../components/items/Items"
 
 export default function Icons() {
   return (

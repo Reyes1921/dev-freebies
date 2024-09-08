@@ -1,6 +1,6 @@
 "use client"
 
-import {links} from "@/app/helpers"
+import {links} from "@/helpers"
 import {Search} from "../search/Search"
 import {usePathname} from "next/navigation"
 import Link from "next/link"

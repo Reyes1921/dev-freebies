@@ -1,5 +1,5 @@
-import {gradientData} from "../assests"
-import {Items} from "../components/items/Items"
+import {gradientData} from "../../data"
+import {Items} from "../../components/items/Items"
 
 export default function Gradients() {
   return (

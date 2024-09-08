@@ -1,4 +1,4 @@
-import {links} from "@/app/helpers"
+import {links} from "@/helpers"
 import {HoverEffect} from "@/components/ui/card-hover-effect"
 
 const {menuLinks} = links()

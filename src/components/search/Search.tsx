@@ -39,7 +39,7 @@ import {
   tdData,
   toolData,
   videoData,
-} from "@/app/assests"
+} from "@/data"
 
 export function Search() {
   const [open, setOpen] = useState(false)

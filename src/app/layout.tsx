@@ -2,7 +2,7 @@ import {Overpass as FontSans} from "next/font/google"
 import {ThemeProvider} from "@/components/ui/theme-provider"
 import {cn} from "@/lib/utils"
 import "./globals.css"
-import {Footer, Header, Menu} from "./components"
+import {Footer, Header, Menu} from "../components"
 
 const fontSans = FontSans({
   subsets: ["latin"],

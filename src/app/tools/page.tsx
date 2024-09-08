@@ -1,5 +1,5 @@
-import {toolData} from "../assests"
-import {Items} from "../components/items/Items"
+import {toolData} from "../../data"
+import {Items} from "../../components/items/Items"
 
 export default function Tools() {
   return (

@@ -1,5 +1,5 @@
-import {videoData} from "../assests"
-import {Items} from "../components/items/Items"
+import {videoData} from "../../data"
+import {Items} from "../../components/items/Items"
 
 export default function Videos() {
   return (

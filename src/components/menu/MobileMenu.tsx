@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import {links} from "@/app/helpers"
+import {links} from "@/helpers"
 import {
   Sheet,
   SheetClose,

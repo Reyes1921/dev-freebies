@@ -1,5 +1,5 @@
-import {imageData} from "../assests"
-import {Items} from "../components/items/Items"
+import {imageData} from "../../data"
+import {Items} from "../../components/items/Items"
 
 export default function Images() {
   return (

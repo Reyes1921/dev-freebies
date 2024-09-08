@@ -11,7 +11,7 @@ import {
   tdData,
   toolData,
   videoData,
-} from "../assests"
+} from "../data"
 
 import {AiOutlineFontSize} from "react-icons/ai"
 import {BsBadge3dFill} from "react-icons/bs"
@@ -66,7 +66,7 @@ export const links = () => {
     },
     {
       name: "components",
-      href: "component",
+      href: "components",
       icon: <LuToyBrick />,
       number: componentData.length,
       description:
