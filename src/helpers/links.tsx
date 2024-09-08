@@ -30,7 +30,7 @@ export const links = () => {
   const menuLinks = [
     {
       name: "3D",
-      href: "3d",
+      link: "3d",
       icon: <BsBadge3dFill />,
       number: tdData.length,
       description:
@@ -39,7 +39,7 @@ export const links = () => {
     },
     {
       name: "animations",
-      href: "animations",
+      link: "animations",
       icon: <MdAnimation />,
       number: animationData.length,
       description:
@@ -48,7 +48,7 @@ export const links = () => {
     },
     {
       name: "buttons",
-      href: "buttons",
+      link: "buttons",
       icon: <IoIosRadioButtonOn />,
       number: buttonData.length,
       description:
@@ -57,7 +57,7 @@ export const links = () => {
     },
     {
       name: "colors",
-      href: "colors",
+      link: "colors",
       icon: <IoColorPalette />,
       number: colorData.length,
       description:
@@ -66,7 +66,7 @@ export const links = () => {
     },
     {
       name: "components",
-      href: "components",
+      link: "components",
       icon: <LuToyBrick />,
       number: componentData.length,
       description:
@@ -75,7 +75,7 @@ export const links = () => {
     },
     {
       name: "fonts",
-      href: "fonts",
+      link: "fonts",
       icon: <AiOutlineFontSize />,
       number: fontData.length,
       description:
@@ -84,7 +84,7 @@ export const links = () => {
     },
     {
       name: "gradients",
-      href: "gradients",
+      link: "gradients",
       icon: <MdGradient />,
       number: gradientData.length,
       description:
@@ -93,7 +93,7 @@ export const links = () => {
     },
     {
       name: "icons",
-      href: "icons",
+      link: "icons",
       icon: <FaCheck />,
       number: iconData.length,
       description:
@@ -102,7 +102,7 @@ export const links = () => {
     },
     {
       name: "illustrations",
-      href: "illustrations",
+      link: "illustrations",
       icon: <FaPaintBrush />,
       number: illustrationsData.length,
       description:
@@ -111,7 +111,7 @@ export const links = () => {
     },
     {
       name: "images",
-      href: "images",
+      link: "images",
       icon: <PiImageSquareBold />,
       number: imageData.length,
       description:
@@ -120,7 +120,7 @@ export const links = () => {
     },
     {
       name: "tools",
-      href: "tools",
+      link: "tools",
       icon: <FaTools />,
       number: toolData.length,
       description:
@@ -129,7 +129,7 @@ export const links = () => {
     },
     {
       name: "videos",
-      href: "videos",
+      link: "videos",
       icon: <FaVideo />,
       number: videoData.length,
       description:

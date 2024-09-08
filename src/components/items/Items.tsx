@@ -14,7 +14,7 @@ import {FaExternalLinkAlt} from "react-icons/fa"
 
 interface arrayContent {
   color: string
-  href: string
+  link: string
   id: number
   img: string
   name: string
@@ -39,7 +39,7 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
           className="shadow-drop-center hover:scale-105 transition-all shadow-drop-center bg-accent dark:bg-card duration-500 border-2 dark:border-[1px]"
           key={item.name}
         >
-          <Link href={item.href} target="_blank">
+          <Link href={item.link} target="_blank">
             <CardHeader className="p-4">
               <CardTitle className="text-sm md:text-base flex items-center justify-normal py-0 ">
                 {item.name}

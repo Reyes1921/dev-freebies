@@ -80,7 +80,7 @@ export function Search() {
             <CommandEmpty>No results found.</CommandEmpty>
             <CommandGroup heading="3D">
               {tdData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <PiImageSquareBold className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>
@@ -91,7 +91,7 @@ export function Search() {
             <CommandSeparator />
             <CommandGroup heading="Animations">
               {animationData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <IoIosRadioButtonOn className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>
@@ -102,7 +102,7 @@ export function Search() {
             <CommandSeparator />
             <CommandGroup heading="Buttons">
               {buttonData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <IoIosRadioButtonOn className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>
@@ -113,7 +113,7 @@ export function Search() {
             <CommandSeparator />
             <CommandGroup heading="Colors">
               {colorData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <AiOutlineBgColors className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>
@@ -124,7 +124,7 @@ export function Search() {
             <CommandSeparator />
             <CommandGroup heading="Components">
               {componentData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <LuToyBrick className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>
@@ -135,7 +135,7 @@ export function Search() {
             <CommandSeparator />
             <CommandGroup heading="Fonts">
               {fontData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <AiOutlineFontSize className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>
@@ -146,7 +146,7 @@ export function Search() {
             <CommandSeparator />
             <CommandGroup heading="Gradients">
               {gradientData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <MdGradient className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>
@@ -157,7 +157,7 @@ export function Search() {
             <CommandSeparator />
             <CommandGroup heading="Icons">
               {iconData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <FaCheck className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>
@@ -168,7 +168,7 @@ export function Search() {
             <CommandSeparator />
             <CommandGroup heading="Illustrations">
               {illustrationsData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <PiImageSquareBold className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>
@@ -179,7 +179,7 @@ export function Search() {
             <CommandSeparator />
             <CommandGroup heading="Images">
               {imageData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <PiImageSquareBold className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>
@@ -190,7 +190,7 @@ export function Search() {
             <CommandSeparator />
             <CommandGroup heading="Tools">
               {toolData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <PiImageSquareBold className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>
@@ -201,7 +201,7 @@ export function Search() {
             <CommandSeparator />
             <CommandGroup heading="Videos">
               {videoData.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link key={item.name} href={item.link} className="">
                   <CommandItem>
                     <PiImageSquareBold className="mr-2 h-4 w-4" />
                     <span>{item.name}</span>

@@ -21,20 +21,20 @@ export const Menu = () => {
           <Search />
           <div className="flex-1 px-1 bg-white divide-y space-y-1 dark:bg-black dark:border-white dark:text-white">
             <ul className="space-y-2 pb-2">
-              {menuLinks.map((link) => (
-                <li key={link.href}>
+              {menuLinks.map((item) => (
+                <li key={item.link}>
                   <Link
-                    href={link.href}
+                    href={item.link}
                     className={`
                       ${
-                        currentPath == `/${link.href}`
+                        currentPath == `/${item.link}`
                           ? " dark:text-white font-bold bg-accent"
                           : " hover:dark:text-white group dark:text-zinc-500"
                       } text-base capitalize text-black font-normal rounded-lg flex items-center p-1 px-3 hover:bg-accent hover:dark:text-white group`}
                   >
-                    {link.icon}
-                    <span className="ml-3 flex flex-1">{link.name}</span>
-                    <Badge variant="secondary">{link?.number}</Badge>
+                    {item.icon}
+                    <span className="ml-3 flex flex-1">{item.name}</span>
+                    <Badge variant="secondary">{item?.number}</Badge>
                   </Link>
                 </li>
               ))}
