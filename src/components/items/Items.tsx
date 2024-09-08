@@ -22,10 +22,7 @@ interface arrayContent {
 export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
   const [loading, setLoading] = useState(true)
 
-  const imageLoading = () => {
-    setLoading(false)
-    console.log(dataArray)
-  }
+  console.log(loading)
 
   return (
     <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 grid-flow-row hover p-0 animated fadeInUp">
@@ -48,25 +45,33 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
             </CardHeader>
             {/* <div className="loader flex justify-center items-center"></div> */}
             <CardContent className="flex justify-center items-center p-0 aspect-video">
-              {false ? (
-                <div className="loader flex justify-center items-center"></div>
-              ) : (
-                <Image
-                  src={item.img}
-                  alt={`Image of ${item.name}`}
-                  width={300}
-                  height={300}
-                  blurDataURL="/logo.svg"
-                  placeholder="blur"
-                  onLoad={imageLoading}
-                  loading="lazy"
-                  onError={() => {
-                    console.error(`Failed to load image: ${item.img}`)
-                    setLoading(false) // Set loading to false even if the image fails to load
-                  }}
-                  className="object-contain w-full h-auto aspect-video"
-                />
-              )}
+              {/* {loading ? ( */}
+
+              <div
+                className={`loader flex justify-center items-center aspect-video ${
+                  loading ? "flex" : "hidden"
+                }`}
+              ></div>
+
+              {/* ) : ( */}
+              <Image
+                src={item.img}
+                alt={`Image of ${item.name}`}
+                width={300}
+                height={300}
+                blurDataURL="/logo.svg"
+                placeholder="blur"
+                onLoad={() => setLoading(false)}
+                loading="lazy"
+                onError={() => {
+                  console.error(`Failed to load image: ${item.img}`)
+                  setLoading(false) // Set loading to false even if the image fails to load
+                }}
+                className={`object-contain w-full h-auto aspect-video transition-all ${
+                  loading ? "invisible w-0 h-0" : "visible"
+                }`}
+              />
+              {/* )} */}
             </CardContent>
             <CardFooter></CardFooter>
           </Link>
