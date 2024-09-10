@@ -39,7 +39,7 @@ Application opens on port 3000
 
 ## ✨ Contributing
 
-Your contributions are welcome! Let's make this project even better together. [Contributing Guide](https://github.com/Reyes1921/dev-freebies/blob/main/contributing)
+Your contributions are welcome! Let's make this project even better together. [Contributing Guide](https://github.com/Reyes1921/dev-freebies/blob/main/contributing.md)
 
 ## 🔑 License
 
