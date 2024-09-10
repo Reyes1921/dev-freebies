@@ -34,7 +34,17 @@ export const Menu = () => {
                   >
                     {item.icon}
                     <span className="ml-3 flex flex-1">{item.name}</span>
-                    <Badge variant="secondary">{item?.number}</Badge>
+                    <Badge
+                      variant="secondary"
+                      className={`
+                      ${
+                        currentPath == `/${item.link}`
+                          ? "text-white bg-black  dark:text-black dark:bg-white"
+                          : " text-black bg-accent  dark:text-white dark:bg-accent"
+                      } `}
+                    >
+                      {item?.number}
+                    </Badge>
                   </Link>
                 </li>
               ))}
