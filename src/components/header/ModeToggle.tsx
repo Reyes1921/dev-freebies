@@ -17,7 +17,7 @@ export function ModeToggle() {
 
   return (
     <>
-      <Link href="https://github.com/Reyes1921/dev-freebies">
+      <Link href="https://github.com/Reyes1921/dev-freebies" target="_blank">
         <Button variant="outline" size="icon" className="mr-2">
           <GitHubLogoIcon className="h-[1.2rem] w-[1.2rem]" />
         </Button>
