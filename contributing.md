@@ -41,12 +41,12 @@ Thank you to everyone who has contributed to this project! Your help has been in
 
 ## Example `data`:
 
-```
-  {
-    id: 1,
-    name: "Poliigon",
-    img: "/3d/poliigon.webp",
-    link: "https://www.poliigon.com/search/free",
-    color: "#00A9CE",
-  }
+```json
+{
+  "id": 1,
+  "name": "Poliigon",
+  "img": "/3d/poliigon.webp",
+  "link": "https://www.poliigon.com/search/free",
+  "color": "#00A9CE"
+}
 ```
