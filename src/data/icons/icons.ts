@@ -41,4 +41,18 @@ export const iconData = [
     link: "https://materialui.co/icons",
     color: "#757575",
   },
+  {
+    id: 7,
+    name: "Google Icons",
+    img: "/icons/fonts.google.icons.webp",
+    link: "https://fonts.google.com/icons",
+    color: "#174EA6",
+  },
+  {
+    id: 8,
+    name: "svgl.app",
+    img: "/icons/svgl.app.webp",
+    link: "https://svgl.app/",
+    color: "#D4D4D4",
+  },
 ]

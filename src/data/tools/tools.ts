@@ -27,4 +27,32 @@ export const toolData = [
     link: "https://imgto.xyz/",
     color: "#3B82F6",
   },
+  {
+    id: 5,
+    name: "Responsively App",
+    img: "/tools/responsively.webp",
+    link: "https://responsively.app/",
+    color: "#10B981",
+  },
+  {
+    id: 6,
+    name: "Excalidraw",
+    img: "/tools/excalidraw.webp",
+    link: "https://excalidraw.com/",
+    color: "#A8A5FF",
+  },
+  {
+    id: 7,
+    name: "Squoosh",
+    img: "/tools/squoosh.webp",
+    link: "https://squoosh.app/",
+    color: "#FF3C8B",
+  },
+  {
+    id: 8,
+    name: "JS Benchmark",
+    img: "/tools/jsbenchmark.webp",
+    link: "https://jsbenchmark.com/",
+    color: "#FF8362",
+  },
 ]
