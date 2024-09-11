@@ -27,4 +27,32 @@ export const animationData = [
     link: "https://keyframes.app/animate",
     color: "#0047DB",
   },
+  {
+    id: 5,
+    name: "GSAP",
+    img: "/animations/gsap.webp",
+    link: "https://gsap.com/",
+    color: "#FA850D",
+  },
+  {
+    id: 6,
+    name: "Animate.css",
+    img: "/animations/animate.style.webp",
+    link: "https://animate.style/",
+    color: "#351C75",
+  },
+  {
+    id: 7,
+    name: "Theatre.js",
+    img: "/animations/theatrejs.webp",
+    link: "https://www.theatrejs.com/",
+    color: "#4ADE80",
+  },
+  {
+    id: 8,
+    name: "Anime.js",
+    img: "/animations/animejs.webp",
+    link: "https://animejs.com/",
+    color: "#F74F4D",
+  },
 ]

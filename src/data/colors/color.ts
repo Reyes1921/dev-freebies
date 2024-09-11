@@ -11,7 +11,7 @@ export const colorData = [
     name: "Color selector",
     img: "/colors/color-selector.webp",
     link: "https://www.color-selector.com",
-    color: "#F5F5E9",
+    color: "#68230D",
   },
   {
     id: 3,

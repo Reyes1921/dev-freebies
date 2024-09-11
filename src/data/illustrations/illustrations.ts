@@ -11,11 +11,11 @@ export const illustrationsData = [
     name: "Open Peeps",
     img: "/illustrations/openpeeps.webp",
     link: "https://www.openpeeps.com/",
-    color: "#333333",
+    color: "#9E9E9E",
   },
   {
     id: 3,
-    name: "Royalty free Vector Illustrations for Commercial Use",
+    name: "Scale by Flexiple",
     img: "/illustrations/flexiple.webp",
     link: "https://scale.flexiple.com/illustrations/",
     color: "#4D61FC",

@@ -18,7 +18,7 @@ export const fontData = [
     name: "Free Faces",
     img: "/fonts/freefaces.webp",
     link: "https://www.freefaces.gallery/",
-    color: "#fff7e999",
+    color: "#9E9E9E",
   },
   {
     id: 4,
@@ -26,5 +26,33 @@ export const fontData = [
     img: "/fonts/dafont.webp",
     link: "https://www.dafont.com/es/",
     color: "#CB0000",
+  },
+  {
+    id: 5,
+    name: "Fonts in the wild",
+    img: "/fonts/fontsinthewild.webp",
+    link: "https://www.fontsinthewild.com/free",
+    color: "#1533a2",
+  },
+  {
+    id: 6,
+    name: "UNCUT",
+    img: "/fonts/uncut.webp",
+    link: "https://uncut.wtf/",
+    color: "#B7B7B7",
+  },
+  {
+    id: 7,
+    name: "Fonts In Use",
+    img: "/fonts/fontsinuse.webp",
+    link: "https://fontsinuse.com/",
+    color: "#D08CCE",
+  },
+  {
+    id: 8,
+    name: "Modern Font Stacks",
+    img: "/fonts/modernfontstacks.webp",
+    link: "https://modernfontstacks.com/",
+    color: "#9E9E9E",
   },
 ]

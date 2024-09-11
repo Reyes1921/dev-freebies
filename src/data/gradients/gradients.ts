@@ -15,7 +15,7 @@ export const gradientData = [
   },
   {
     id: 3,
-    name: "Animated Gradient Background Generator",
+    name: "Animated Gradient",
     img: "/gradients/animated-gradient.webp",
     link: "https://animated-gradient-background-generator.netlify.app/",
     color: "#8A0DD6",

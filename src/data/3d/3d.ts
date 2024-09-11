@@ -27,4 +27,32 @@ export const tdData = [
     link: "https://www.blendswap.com/",
     color: "#ff922b",
   },
+  {
+    id: 5,
+    name: "Textures",
+    img: "/3d/textures.webp",
+    link: "https://www.textures.com/free",
+    color: "#0079D4",
+  },
+  {
+    id: 6,
+    name: "3dsky",
+    img: "/3d/3dsky.webp",
+    link: "https://3dsky.org/3dmodels?types=free&types=om",
+    color: "#4182AA",
+  },
+  {
+    id: 7,
+    name: "3Dassets.one",
+    img: "/3d/3dassets.webp",
+    link: "https://3dassets.one/?q=&sort=popular",
+    color: "#CB6CE6",
+  },
+  {
+    id: 8,
+    name: "Kenney",
+    img: "/3d/kenney.webp",
+    link: "https://kenney.nl/",
+    color: "#FFD400",
+  },
 ]
