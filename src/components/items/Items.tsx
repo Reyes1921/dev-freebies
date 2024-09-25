@@ -8,7 +8,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import Image from "next/image"
-import Link from "next/link"
 import {useState} from "react"
 import {FaExternalLinkAlt} from "react-icons/fa"
 
@@ -24,7 +23,6 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
 
   const imageLoading = () => {
     setLoading(false)
-    console.log(dataArray)
   }
 
   return (
@@ -39,7 +37,11 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
           className="shadow-drop-center hover:scale-105 transition-all shadow-drop-center bg-accent dark:bg-card duration-500 border-2 dark:border-[1px]"
           key={item.name}
         >
-          <Link href={item.link} target="_blank">
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
             <CardHeader className="p-4">
               <CardTitle className="text-sm md:text-base flex items-center justify-normal py-0 ">
                 {item.name}
@@ -64,14 +66,14 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
                     console.error(`Failed to load image: ${item.img}`)
                     setLoading(false) // Set loading to false even if the image fails to load
                   }}
-                  className={`object-contain w-full h-auto border-y border-black ${
+                  className={`object-contain w-full h-auto border-y border-black aspect-video ${
                     loading ? "blur" : "remove-blur"
                   }`}
                 />
               )}
             </CardContent>
             <CardFooter></CardFooter>
-          </Link>
+          </a>
         </Card>
       ))}
     </div>
