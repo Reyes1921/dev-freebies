@@ -55,4 +55,32 @@ export const tdData = [
     link: "https://kenney.nl/",
     color: "#FFD400",
   },
+  {
+    id: 9,
+    name: "Share Textures",
+    img: "/3d/sharetextures.webp",
+    link: "https://www.sharetextures.com/",
+    color: "#00a8a5",
+  },
+  {
+    id: 10,
+    name: "3DExport",
+    img: "/3d/3dexport.webp",
+    link: "https://3dexport.com/",
+    color: "#DA3156",
+  },
+  {
+    id: 11,
+    name: "Quaternius",
+    img: "/3d/quaternius.webp",
+    link: "https://quaternius.com/",
+    color: "#FBE50B",
+  },
+  {
+    id: 12,
+    name: "BlenderKit ",
+    img: "/3d/blenderkit.webp",
+    link: "https://www.blenderkit.com/",
+    color: "#6434FF",
+  },
 ]
