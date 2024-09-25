@@ -1,12 +1,6 @@
 "use client"
 
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card"
 import Image from "next/image"
 import {useState} from "react"
 import {FaExternalLinkAlt} from "react-icons/fa"
@@ -53,26 +47,26 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
               {false ? (
                 <div className="loader flex justify-center items-center"></div>
               ) : (
-                <Image
+                <img
                   src={item.img}
                   alt={`Image of ${item.name}`}
                   width={300}
                   height={300}
-                  blurDataURL="/logo.svg"
-                  placeholder="blur"
+                  // blurDataURL="/logo.svg"
+                  // placeholder="blur"
                   onLoad={imageLoading}
                   loading="lazy"
                   onError={() => {
                     console.error(`Failed to load image: ${item.img}`)
                     setLoading(false) // Set loading to false even if the image fails to load
                   }}
-                  className={`object-contain w-full h-auto border-y border-black aspect-video ${
-                    loading ? "blur" : "remove-blur"
-                  }`}
+                  className={`object-fill w-full border-black aspect-[16/9] rounded-b-lg`}
+                  // ${
+                  //   loading ? "blur" : "remove-blur"
+                  // }
                 />
               )}
             </CardContent>
-            <CardFooter></CardFooter>
           </a>
         </Card>
       ))}
