@@ -27,4 +27,32 @@ export const gradientData = [
     link: "https://www.grabient.com",
     color: "#CE5DB8",
   },
+  {
+    id: 5,
+    name: "CSS Gradient",
+    img: "/gradients/cssgradient.webp",
+    link: "https://cssgradient.io/",
+    color: "#FDD02E",
+  },
+  {
+    id: 6,
+    name: "WebGradients",
+    img: "/gradients/webgradients.webp",
+    link: "https://webgradients.com/",
+    color: "#00ADB1",
+  },
+  {
+    id: 7,
+    name: "uiGradients ",
+    img: "/gradients/uigradients.webp",
+    link: "https://uigradients.com/#WitchingHour",
+    color: "#9E1233",
+  },
+  {
+    id: 8,
+    name: "Gradient Magic ",
+    img: "/gradients/gradientmagic.webp",
+    link: "https://www.gradientmagic.com/",
+    color: "#3721AB",
+  },
 ]

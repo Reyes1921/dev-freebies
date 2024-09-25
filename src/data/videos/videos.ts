@@ -27,4 +27,32 @@ export const videoData = [
     link: "https://vimeo.com/groups/freehd/",
     color: "#1DB6F1",
   },
+  {
+    id: 5,
+    name: "mixkit",
+    img: "/videos/mixkit.webp",
+    link: "https://mixkit.co/free-stock-video/",
+    color: "#0A8385",
+  },
+  {
+    id: 6,
+    name: "Pexels",
+    img: "/videos/pexels.webp",
+    link: "https://www.pexels.com/videos/",
+    color: "#07A081",
+  },
+  {
+    id: 7,
+    name: "FOCA Stock",
+    img: "/videos/focastock.webp",
+    link: "https://focastock.com/videos/",
+    color: "#ffffff",
+  },
+  {
+    id: 8,
+    name: "Dareful",
+    img: "/videos/dareful.webp",
+    link: "https://dareful.com/",
+    color: "#2D1770",
+  },
 ]

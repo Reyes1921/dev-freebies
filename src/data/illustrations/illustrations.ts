@@ -27,4 +27,32 @@ export const illustrationsData = [
     link: "https://lukaszadam.com/illustrations",
     color: "#FFC62A",
   },
+  {
+    id: 5,
+    name: "LottieFiles",
+    img: "/illustrations/lottiefiles.webp",
+    link: "https://lottiefiles.com/search?q=illustration&category=animations",
+    color: "#00DDB3",
+  },
+  {
+    id: 6,
+    name: "SVG Hub",
+    img: "/illustrations/svghub.webp",
+    link: "https://svghub.vercel.app/",
+    color: "#77CBB9",
+  },
+  {
+    id: 7,
+    name: "Svg Doodle",
+    img: "/illustrations/svgicon.webp",
+    link: "https://svgicon.net/",
+    color: "#ffffff",
+  },
+  {
+    id: 8,
+    name: "Themeisle",
+    img: "/illustrations/themeisle.webp",
+    link: "https://themeisle.com/illustrations/",
+    color: "#FB9E55",
+  },
 ]

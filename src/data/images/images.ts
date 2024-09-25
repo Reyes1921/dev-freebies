@@ -27,4 +27,32 @@ export const imageData = [
     link: "https://www.pexels.com/",
     color: "#079E7F",
   },
+  {
+    id: 5,
+    name: "Barnimages",
+    img: "/images/barnimages.webp",
+    link: "https://barnimages.com/",
+    color: "#ffffff",
+  },
+  {
+    id: 6,
+    name: "Skitterphoto",
+    img: "/images/skitterphoto.webp",
+    link: "https://skitterphoto.com/",
+    color: "#FABF22",
+  },
+  {
+    id: 7,
+    name: "picjumbo",
+    img: "/images/picjumbo.webp",
+    link: "https://picjumbo.com/",
+    color: "#ffffff",
+  },
+  {
+    id: 8,
+    name: "Freepik",
+    img: "/images/freepik.webp",
+    link: "https://www.freepik.com/",
+    color: "#FEB602",
+  },
 ]
