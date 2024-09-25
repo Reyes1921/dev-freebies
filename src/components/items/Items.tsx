@@ -1,7 +1,7 @@
-"use client"
+// "use client"
 
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card"
-import Image from "next/image"
+// import Image from "next/image"
 import {useState} from "react"
 import {FaExternalLinkAlt} from "react-icons/fa"
 
@@ -13,11 +13,11 @@ interface arrayContent {
   name: string
 }
 export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
-  const [loading, setLoading] = useState(true)
+  // const [loading, setLoading] = useState(true)
 
-  const imageLoading = () => {
-    setLoading(false)
-  }
+  // const imageLoading = () => {
+  //   setLoading(false)
+  // }
 
   return (
     <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 grid-flow-row hover p-0 animated fadeInUp">
@@ -54,12 +54,12 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
                   height={300}
                   // blurDataURL="/logo.svg"
                   // placeholder="blur"
-                  onLoad={imageLoading}
+                  // onLoad={imageLoading}
                   loading="lazy"
-                  onError={() => {
-                    console.error(`Failed to load image: ${item.img}`)
-                    setLoading(false) // Set loading to false even if the image fails to load
-                  }}
+                  // onError={() => {
+                  //   console.error(`Failed to load image: ${item.img}`)
+                  //   setLoading(false) // Set loading to false even if the image fails to load
+                  // }}
                   className={`object-fill w-full border-black aspect-[16/9] rounded-b-lg`}
                   // ${
                   //   loading ? "blur" : "remove-blur"
