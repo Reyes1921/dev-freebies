@@ -5,7 +5,6 @@ import {useState} from "react"
 
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card"
 import {FaExternalLinkAlt} from "react-icons/fa"
-import {Imgs} from "./Imgs"
 
 interface arrayContent {
   color: string
