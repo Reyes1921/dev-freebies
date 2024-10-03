@@ -28,7 +28,7 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
               "--color": item.color,
             } as React.CSSProperties
           }
-          className="shadow-drop-center hover:scale-105 transition-all shadow-drop-center bg-accent dark:bg-card duration-500 border-2 dark:border-[1px] mb-2"
+          className="shadow-drop-center hover:scale-105 transition-all shadow-drop-center bg-accent dark:bg-card duration-500 border-2 dark:border-2 mb-2"
           key={item.name}
         >
           <a
