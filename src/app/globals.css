@@ -80,6 +80,12 @@
   animation: rot1 1.2s linear infinite;
 }
 
+.footer-bottom {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
 @keyframes rot1 {
   to {
     transform: rotate(360deg);
@@ -91,7 +97,7 @@
 }
 
 .shadow-drop-center:hover {
-  animation: shadow-drop-center 0.4s linear both;
+  animation: shadow-drop-center 0.2s linear both;
 }
 
 @keyframes shadow-drop-center {
@@ -99,7 +105,7 @@
     box-shadow: 0 0 0 0 transparent;
   }
   100% {
-    box-shadow: 0 0 15px 0 var(--color);
+    box-shadow: 0 0 25px 0 var(--color);
   }
 }
 

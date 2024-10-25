@@ -1,7 +1,7 @@
 import {Cards} from "../components/cards/Cards"
 export default function Home() {
   return (
-    <div className="">
+    <>
       <h1 className="hidden">Dev Freebies</h1>
       <h3 className="text-center text-2xl md:text-4xl font-bold">
         Your Hub for Essential Websites and Resources
@@ -11,6 +11,6 @@ export default function Home() {
         and enhance your projects
       </p>
       <Cards />
-    </div>
+    </>
   )
 }

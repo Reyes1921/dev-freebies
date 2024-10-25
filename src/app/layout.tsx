@@ -2,7 +2,7 @@ import {Overpass as FontSans} from "next/font/google"
 import {ThemeProvider} from "@/components/ui/theme-provider"
 import {cn} from "@/lib/utils"
 import "./globals.css"
-import {Header, Menu} from "../components"
+import {Footer, Header, Menu} from "../components"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -31,7 +31,12 @@ export default async function RootLayout({
 }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
-      <body className={cn("min-h-screen font-sans", fontSans.variable)}>
+      <body
+        className={cn(
+          "min-h-screen font-sans footer-bottom",
+          fontSans.variable
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -45,6 +50,7 @@ export default async function RootLayout({
               {children}
             </div>
           </main>
+          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>

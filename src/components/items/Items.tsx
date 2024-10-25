@@ -28,7 +28,7 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
               "--color": item.color,
             } as React.CSSProperties
           }
-          className="shadow-drop-center hover:scale-105 transition-all shadow-drop-center bg-accent dark:bg-card duration-500 border-2 dark:border-2 mb-2"
+          className="group transition-all shadow-drop-center bg-accent dark:bg-card duration-500 border-2 dark:border-2 overflow-hidden mb-2"
           key={item.name}
         >
           <a
@@ -57,7 +57,7 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
                   console.error(`Failed to load image: ${item.img}`)
                   setLoading(false)
                 }}
-                className={`object-fill w-full border-black aspect-[16/9] rounded-b-lg ${
+                className={`object-fill w-full border-black aspect-[16/9] rounded-b-lg ease-in-out  transition-all duration-500 group-hover:scale-110 ${
                   loading ? "blur" : "remove-blur"
                 }`}
               />
