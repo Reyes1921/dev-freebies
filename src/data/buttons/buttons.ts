@@ -55,4 +55,11 @@ export const buttonData = [
     link: "https://knopf.dev/",
     color: "#E01585",
   },
+  {
+    id: 9,
+    name: "Originui",
+    img: "/buttons/originui.webp",
+    link: "https://originui.com/buttons",
+    color: "#FAFAFA",
+  },
 ]

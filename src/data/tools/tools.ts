@@ -55,4 +55,32 @@ export const toolData = [
     link: "https://jsbenchmark.com/",
     color: "#FF8362",
   },
+  {
+    id: 9,
+    name: "Omatsuri",
+    img: "/tools/omatsuri.webp",
+    link: "https://omatsuri.app/",
+    color: "#F04A5C",
+  },
+  {
+    id: 10,
+    name: "CSS clip-path maker",
+    img: "/tools/bennettfeely.webp",
+    link: "https://bennettfeely.com/clippy/",
+    color: "#0A89E8",
+  },
+  {
+    id: 11,
+    name: "Scrollbar.app",
+    img: "/tools/scrollbar.webp",
+    link: "https://scrollbar.app/",
+    color: "#6BA48D",
+  },
+  {
+    id: 12,
+    name: "Readme.so",
+    img: "/tools/readme.webp",
+    link: "https://readme.so/en",
+    color: "#34D399",
+  },
 ]

@@ -55,4 +55,11 @@ export const iconData = [
     link: "https://svgl.app/",
     color: "#D4D4D4",
   },
+  {
+    id: 9,
+    name: "Flaticon",
+    img: "/icons/flaticon.webp",
+    link: "https://www.flaticon.com/",
+    color: "#17D1C6",
+  },
 ]
