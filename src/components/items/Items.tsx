@@ -20,7 +20,7 @@ export const Items = ({dataArray}: {dataArray: arrayContent[]}) => {
     setLoading(false)
   }
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 grid-flow-row hover p-0 animated scale-up-top">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 grid-flow-row hover p-0 animated fadeIn">
       {dataArray.map((item: arrayContent) => (
         <Card
           style={
