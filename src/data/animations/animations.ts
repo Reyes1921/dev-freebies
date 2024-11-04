@@ -55,4 +55,32 @@ export const animationData = [
     link: "https://animejs.com/",
     color: "#F74F4D",
   },
+  {
+    id: 9,
+    name: "Popmotion",
+    img: "/animations/popmotion.webp",
+    link: "https://popmotion.io/pure/",
+    color: "#EC176A",
+  },
+  {
+    id: 10,
+    name: "MOTION ONE",
+    img: "/animations/motion.webp",
+    link: "https://motion.dev/",
+    color: "#F0E410",
+  },
+  {
+    id: 11,
+    name: "AniJS",
+    img: "/animations/anijs.webp",
+    link: "http://anijs.github.io/",
+    color: "#1F8DD6",
+  },
+  {
+    id: 12,
+    name: "vivus.js",
+    img: "/animations/vivus.webp",
+    link: "https://maxwellito.github.io/vivus/",
+    color: "#5AA8C5",
+  },
 ]

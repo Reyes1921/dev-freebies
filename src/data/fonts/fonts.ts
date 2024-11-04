@@ -55,4 +55,32 @@ export const fontData = [
     link: "https://modernfontstacks.com/",
     color: "#9E9E9E",
   },
+  {
+    id: 9,
+    name: "Modern fluid typography",
+    img: "/fonts/modern-fluid-typography.webp",
+    link: "https://modern-fluid-typography.vercel.app/",
+    color: "#EA2ED1",
+  },
+  {
+    id: 10,
+    name: "Font.Download",
+    img: "/fonts/font.download.webp",
+    link: "https://font.download/",
+    color: "#CA2088",
+  },
+  {
+    id: 11,
+    name: "OnlineWebFonts.COM",
+    img: "/fonts/onlinewebfonts.webp",
+    link: "https://www.onlinewebfonts.com/fonts",
+    color: "#0399FE",
+  },
+  {
+    id: 12,
+    name: "Font Pairings",
+    img: "/fonts/fontpairings.webp",
+    link: "https://fontpairings.bypeople.com/",
+    color: "#FB7C31",
+  },
 ]

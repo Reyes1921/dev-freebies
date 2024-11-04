@@ -55,4 +55,32 @@ export const componentData = [
     link: "https://www.radix-ui.com/",
     color: "#3e63dd",
   },
+  {
+    id: 9,
+    name: "Magic UI",
+    img: "/components/magicui.webp",
+    link: "https://magicui.design/",
+    color: "#C982E0",
+  },
+  {
+    id: 10,
+    name: "Floatui",
+    img: "/components/floatui.webp",
+    link: "https://floatui.com/",
+    color: "#0065FF",
+  },
+  {
+    id: 11,
+    name: "HyperUI",
+    img: "/components/hyperui.webp",
+    link: "https://www.hyperui.dev/",
+    color: "#F92F60",
+  },
+  {
+    id: 12,
+    name: "Preline UI",
+    img: "/components/preline.webp",
+    link: "https://preline.co/",
+    color: "#2563EB",
+  },
 ]

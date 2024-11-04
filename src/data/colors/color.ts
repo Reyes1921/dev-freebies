@@ -56,4 +56,32 @@ export const colorData = [
     link: "https://mybrandnewlogo.com/color-palette-generator",
     color: "#4E42D4",
   },
+  {
+    id: 9,
+    name: "Material UI",
+    img: "/colors/materialui.webp",
+    link: "https://materialui.co/colors",
+    color: "#FFFF00",
+  },
+  {
+    id: 10,
+    name: "Poline",
+    img: "/colors/meodai.webp",
+    link: "https://meodai.github.io/poline/",
+    color: "#C52D1C",
+  },
+  {
+    id: 11,
+    name: "Culrs",
+    img: "/colors/culrs.webp",
+    link: "https://culrs.com/",
+    color: "#FF0064",
+  },
+  {
+    id: 12,
+    name: "Paletton",
+    img: "/colors/paletton.webp",
+    link: "https://www.paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF",
+    color: "#801515",
+  },
 ]

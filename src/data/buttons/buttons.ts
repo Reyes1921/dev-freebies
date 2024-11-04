@@ -62,4 +62,25 @@ export const buttonData = [
     link: "https://originui.com/buttons",
     color: "#FAFAFA",
   },
+  {
+    id: 10,
+    name: "Copy & Paste CSS",
+    img: "/buttons/copy-paste-css.webp",
+    link: "https://copy-paste-css.com/",
+    color: "#C4FD9B",
+  },
+  {
+    id: 11,
+    name: "CSS Button Styles",
+    img: "/buttons/element-button.webp",
+    link: "https://tricksforweb.dev/css/element-button/",
+    color: "#003366",
+  },
+  {
+    id: 12,
+    name: "Buttons you'll Click",
+    img: "/buttons/buttons.webp",
+    link: "https://www.buttons.cool/buttons",
+    color: "#9242D9",
+  },
 ]
