@@ -46,7 +46,7 @@ export const illustrationsData = [
     name: "Svg Doodle",
     img: "/illustrations/svgicon.webp",
     link: "https://svgicon.net/",
-    color: "#ffffff",
+    color: "#32382A",
   },
   {
     id: 8,
@@ -54,5 +54,33 @@ export const illustrationsData = [
     img: "/illustrations/themeisle.webp",
     link: "https://themeisle.com/illustrations/",
     color: "#FB9E55",
+  },
+  {
+    id: 9,
+    name: "Illustrations Universe",
+    img: "/illustrations/illustrationsuniverse.webp",
+    link: "https://illustrationsuniverse.com/",
+    color: "#664EC1",
+  },
+  {
+    id: 10,
+    name: "Free Vector Illustrations",
+    img: "/illustrations/freeillustrations.webp",
+    link: "https://www.freeillustrations.club/",
+    color: "#4267B2",
+  },
+  {
+    id: 11,
+    name: "Ultima",
+    img: "/illustrations/ultima.storytale.webp",
+    link: "https://ultima.storytale.io/",
+    color: "#0157FE",
+  },
+  {
+    id: 12,
+    name: "Illustrations vol.1",
+    img: "/illustrations/illustrations.webp",
+    link: "https://petrbilek.gumroad.com/l/illustrations-vol-1",
+    color: "#51EDF7",
   },
 ]

@@ -32,7 +32,7 @@ export const imageData = [
     name: "Barnimages",
     img: "/images/barnimages.webp",
     link: "https://barnimages.com/",
-    color: "#ffffff",
+    color: "#F0D90E",
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ export const imageData = [
     name: "picjumbo",
     img: "/images/picjumbo.webp",
     link: "https://picjumbo.com/",
-    color: "#ffffff",
+    color: "#FF5C79",
   },
   {
     id: 8,
@@ -54,5 +54,33 @@ export const imageData = [
     img: "/images/freepik.webp",
     link: "https://www.freepik.com/",
     color: "#FEB602",
+  },
+  {
+    id: 9,
+    name: "Foodiesfeed",
+    img: "/images/foodiesfeed.webp",
+    link: "https://www.foodiesfeed.com/",
+    color: "#F3A148",
+  },
+  {
+    id: 10,
+    name: "Little Visuals",
+    img: "/images/littlevisuals.webp",
+    link: "https://littlevisuals.co/",
+    color: "#D6BCFA",
+  },
+  {
+    id: 11,
+    name: "Nappy",
+    img: "/images/nappy.webp",
+    link: "https://nappy.co/",
+    color: "#FF0000",
+  },
+  {
+    id: 12,
+    name: "Noun Project",
+    img: "/images/thenounproject.webp",
+    link: "https://thenounproject.com/photos/",
+    color: "#CECB48",
   },
 ]

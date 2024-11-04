@@ -46,7 +46,7 @@ export const videoData = [
     name: "FOCA Stock",
     img: "/videos/focastock.webp",
     link: "https://focastock.com/videos/",
-    color: "#ffffff",
+    color: "#8E4F41",
   },
   {
     id: 8,
@@ -54,5 +54,33 @@ export const videoData = [
     img: "/videos/dareful.webp",
     link: "https://dareful.com/",
     color: "#2D1770",
+  },
+  {
+    id: 9,
+    name: "Sample Videos",
+    img: "/videos/sample-videos.webp",
+    link: "https://www.quinticsports.com/sample-videos/",
+    color: "#4E1C22",
+  },
+  {
+    id: 10,
+    name: "Shutter Stock",
+    img: "/videos/shutterstock.webp",
+    link: "https://www.shutterstock.com/video/search/free-sample",
+    color: "#FC3441",
+  },
+  {
+    id: 11,
+    name: "Videezy",
+    img: "/videos/videezy.webp",
+    link: "https://www.videezy.com/",
+    color: "#8E37C7",
+  },
+  {
+    id: 12,
+    name: "Freepik",
+    img: "/videos/freepik.webp",
+    link: "https://www.freepik.com/videos",
+    color: "#336AEA",
   },
 ]

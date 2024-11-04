@@ -60,7 +60,7 @@ export const buttonData = [
     name: "Originui",
     img: "/buttons/originui.webp",
     link: "https://originui.com/buttons",
-    color: "#FAFAFA",
+    color: "#EF4444",
   },
   {
     id: 10,

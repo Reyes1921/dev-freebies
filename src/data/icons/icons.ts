@@ -62,4 +62,25 @@ export const iconData = [
     link: "https://www.flaticon.com/",
     color: "#17D1C6",
   },
+  {
+    id: 10,
+    name: "Iconbuddy",
+    img: "/icons/iconbuddy.webp",
+    link: "https://iconbuddy.com/",
+    color: "#E92B53",
+  },
+  {
+    id: 11,
+    name: "Eva icons",
+    img: "/icons/eva-icons.webp",
+    link: "https://akveo.github.io/eva-icons/#//",
+    color: "#3366FF",
+  },
+  {
+    id: 12,
+    name: "Radix UI",
+    img: "/icons/radix-icons.webp",
+    link: "https://www.radix-ui.com/icons",
+    color: "#3366FF",
+  },
 ]
